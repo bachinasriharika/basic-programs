@@ -5,9 +5,9 @@ void main(){
     scanf("%d",&n);
     temp=n;
     while(n!=0){
-        r=n%10;
-        rev=rev*10+r;
-        n=n/10;
+        r=n%10;//121%10 it returns last number i.e 1
+        rev=rev*10+r;//it will be like 121 a number be it read like a bits wise '1','2','1' ----o*10+1=1 so rev=1
+        n=n/10;// it will return remaning dits like quotitent i.e 12
     }
     if(rev==temp)
         printf("the number is palindrome");
